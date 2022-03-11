@@ -48,8 +48,8 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Links
 
-- Solution URL: [@nees101/FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [@nees101/Github](https://your-live-site-url.com)
+- Solution URL: [@nees101/FrontendMentor](https://www.frontendmentor.io/solutions/interactive-pricing-component-using-css-bootstrap-and-jquery-5W7YszrAO)
+- Live Site URL: [@nees101/Github]( https://nees101.github.io/Interactive-Pricing-Component/)
 
 ## My process
 
