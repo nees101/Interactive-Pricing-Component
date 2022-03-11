@@ -1,0 +1,299 @@
+:root {
+  --Soft-Cyan: hsl(174, 77%, 80%);
+  --Strong-Cyan: hsl(174, 86%, 45%);
+  --Light-Grayish-Red: hsl(14, 92%, 95%);
+  --Light-Red: hsl(15, 100%, 70%);
+  --Pale-Blue: hsl(226, 100%, 87%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Pale-Blue: hsl(230, 100%, 99%);
+  --Light-Gray-Blue: hsl(224, 65%, 95%);
+  --Light-Grayish-Blue: hsl(223, 50%, 87%);
+  --Grayish-Blue: hsl(225, 20%, 60%);
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+  --Font-Family: 'Manrope', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+  background-image: url("images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw auto;
+}
+
+main {
+  text-align: center;
+  padding: 4% 0;
+  font-family: var(--Font-Family);
+  font-size: 0.8rem;
+}
+
+h1 {
+  color: var(--Dark-Desaturated-Blue);
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.94rem;
+}
+
+strong {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--Dark-Desaturated-Blue);
+}
+
+/* Intro Section */
+.introduction {
+  background-image: url("images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  width: 100%;
+}
+
+/* Pricing and Page Views Section */
+.pricing-component {
+  background-color: var(--White);
+  margin: auto;
+  width: 37%;
+  margin-top: 2%;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 5px 2px var(--Light-Gray-Blue);
+  -moz-box-shadow: 0 0 5px 2px var(--Light-Gray-Blue);
+  box-shadow: 0 0 5px 2px var(--Light-Gray-Blue);
+}
+
+.billing {
+  padding: 40px;
+}
+
+.views {
+  padding: 20px 60px 0 0;
+}
+
+.slidecontainer-desktop,.slidecontainer-mobile {
+  width: 100%;
+  padding:20px 0;
+}
+.slidecontainer-mobile{
+  display:none;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: var(--Light-Gray-Blue);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 40px;
+  /* Set a specific slider handle width */
+  height: 40px;
+  /* Slider handle height */
+  background: var(--Strong-Cyan);
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px var(--Strong-Cyan);
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  /* Set a specific slider handle width */
+  height: 40px;
+  /* Slider handle height */
+  background: var(--Strong-Cyan);
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px var(--Strong-Cyan);
+  border: none;
+}
+
+.toggle {
+  position: relative;
+  margin:25px 0;
+}
+
+.toggle .form-check-input ,.toggle .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+   cursor:pointer;
+}
+
+.left-label {
+  position: absolute;
+  left: 90px;
+}
+
+.right-label {
+  position: absolute;
+  right: 90px;
+}
+
+.discount-desktop, .discount-mobile {
+  position: absolute;
+  right: 1%;
+  top: 15%;
+  font-size: 0.65rem;
+  background-color: var(--Light-Grayish-Red);
+  color: var(--Light-Red);
+  border-radius: 6px;
+  padding: 1px 5px;
+}
+
+.discount-mobile {
+  display: none;
+}
+
+.form-check-input {
+  background-color: var(--Light-Grayish-Blue);
+  height: 20px;
+  width: 45px !important;
+  border: none;
+  box-shadow: none !important;
+  position: absolute;
+  left: 54%;
+}
+
+.form-check-input:checked {
+  background-color: var(--Soft-Cyan);
+}
+
+/* Features and CTA section */
+.trial {
+  padding: 10px 0;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 2;
+}
+
+.check-icon {
+  margin-right: 15px;
+}
+
+.features {
+  padding-left: 0;
+}
+
+.CTA_btn {
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--Pale-Blue);
+  font-size: 0.8rem;
+  padding: 4% 0;
+  border-radius: 1.5rem;
+   margin: 10px 0;
+}
+
+
+.CTA_btn:hover {
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--White);
+}
+
+/* Footer Section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query */
+@media screen and (max-width:375px) {
+
+  body {
+    width: 100vw;
+    height: auto;
+    background-size: 100vw 50vh;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  strong {
+    font-size: 2rem;
+  }
+
+  .introduction p {
+    padding: 0 50px;
+  }
+
+  .pricing-component {
+    width: 85%;
+    height: 75vh;
+  }
+
+  .billing {
+    padding: 20px;
+  }
+
+  .views {
+    padding-left: 40px;
+  }
+  .slidecontainer-mobile {
+    display:block;
+  }
+  .slidecontainer-desktop{
+    display:none;
+  }
+
+  .left-label, .right-label, li {
+    font-size: 0.75rem;
+  }
+
+  .left-label {
+    left: 10px;
+  }
+
+  .right-label {
+    right: 20px;
+  }
+
+  .discount-desktop {
+    display: none;
+  }
+
+  .discount-mobile {
+    display: block;
+    position: absolute;
+    right: -8%;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+
+}
